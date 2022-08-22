@@ -17,8 +17,9 @@ body, html{
     background:linear-gradient(0deg, purple, rgb(50, 11, 135));
     display: flex;
     height: 100%;
-    width: clamp(30%,40%,50%);
+    width: 30%;
     flex-direction: column;
+    
   }
   #div1cont{
     display: flex;
@@ -55,22 +56,25 @@ body, html{
     background:linear-gradient(0deg, rgb(220, 35, 220), rgb(45, 22, 146));;
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
     height: 100%;
-    width: 70%;
+    width: 100%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.573);
+    overflow: scroll;
   }
-  #div2cont{
+  .div2cont{
     display: flex;
     gap: 2vh;
     width: 100%;
     height: max-content;
   }
-  #title2Cont{
+  .title2Cont{
     width: 50%;
   }
 
 
-  #title2{
+  .title2{
     display: flex;
     justify-content: space-between;
     margin-left: 2vh;
@@ -78,23 +82,34 @@ body, html{
     width: max-content;
     
   }
-  #title2>div{
+  .title2>div{
     
     font-size: 4vh;
   }
 
-  #desc2{
+  .desc2{
     margin-left: 2vh;
     margin-top: 1vh;
     width: max-content;
   }
-  #desc2>div{
+  .desc2>div{
     font-size: 3vh;
     border-bottom: 2px solid black;
     padding-bottom: .5vh;
   }
+  .todoButtonContainer{
+    width: 30%;
+    height: 10vh;
+    margin: 2vh;
+    
+    border: none;
+    border-radius: 1vh;
+    font-size: 5vh;
+    
+    transition: ease .1s;
+  }
 
-  #createTodo{
+  .createTodo{
     
     width: 30%;
     height: 10vh;
@@ -123,7 +138,7 @@ body, html{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2; 
     
   }
@@ -180,10 +195,10 @@ body, html{
     box-shadow: 0px 0px 5px black;
     margin-right: 1vh;
   }
-
+/* ---------------------------------------------- */
 
   #content1{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -195,7 +210,8 @@ body, html{
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
-    z-index: 3; 
+    z-index: 2; 
+
   }
 
   #form1{
@@ -233,7 +249,78 @@ body, html{
     margin-right: 1vh;
   }
 
-  
+  #contentDisplay1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3vh;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+
+  .projectOutline{
+    margin-top: 2vh;
+    padding-top:1.5vh ;
+    padding-bottom:1.5vh ;
+    padding-left:2vh ;
+    padding-right:2vh ;
+    font-size: 3vh;
+    width: 95%;
+    height: max-content;
+      background-color: rgba(0, 0, 0, 0.159);
+      border: none;
+      border-radius: 6px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.291);
+      overflow: scroll;
+      
+    
+  }
+
+  #contentDisplay2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3vh;
+    height: 100%;
+    width: 100%;
+  }
+
+  .todoDisplay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+    width: auto;
+    height: max-content;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.267);
+    border-radius: 10px;
+    margin: 8px;
+    
+  }
+
+  .taskDiv{
+    display: flex;
+    
+    flex-direction: column;
+    width: auto;
+    height: max-content;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 2, 255, 0.311);
+    
+  }
+  .newMainDiv{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    
+  }
+
   
 
 
